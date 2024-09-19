@@ -1,5 +1,108 @@
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(
+    to right,
+    #a1c4fd,
+    #c2e9fb
+  ); /* Light blue gradient background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container Styling */
+#main {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center; /* Center text alignment */
+}
+
+/* Title Styling */
+#title {
+  margin-bottom: 20px; /* Space below the title */
+}
+
+#title h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem; /* Larger font size */
+  color: #007acc; /* Primary color */
+  margin-bottom: 20px; /* Space below the title */
+  border-bottom: 2px solid #007acc; /* Underline the title */
+  display: inline-block; /* Align underline with text */
+  padding-bottom: 10px; /* Space between text and underline */
+}
+
+/* Image Container */
+#img-div {
+  margin-bottom: 20px;
+}
+
+#image {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Caption Styling */
+#img-caption {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Fieldset Styling */
+fieldset {
+  border: 2px solid #007acc;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: #007acc; /* Matching color */
+}
+
+/* Link Styling */
+a {
+  color: #005999; /* Darker blue for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #003366; /* Darker on hover */
+}
+
+/* Add a fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#main {
+  animation: fadeIn 1s ease-in-out;
 }
